@@ -1,0 +1,31 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Criar Usuário</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: white;" padding>
+	<ion-item>
+		<ion-input placeholder="Seu nome"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="E-mail"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="Telefone"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="Senha" type="password"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="Confirmar senha" type="password"></ion-input>
+	</ion-item>
+
+	<button (click)="createUser()" class="createUserButton" ion-button full>
+		Criar conta
+	</button>
+</ion-content>
