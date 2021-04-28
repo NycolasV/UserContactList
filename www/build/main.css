@@ -25696,6 +25696,14 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
+.createUserButton {
+  margin: 30% 0px 10px 0px;
+  padding: 30px 0px 30px 0px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
 page-home .homeTitle {
   color: black;
   text-align: center;
@@ -25722,4 +25730,65 @@ page-home .homeButton {
 
 page-home .buttons {
   margin-top: 30%;
+}
+
+.homeButton {
+  margin: 10px 0px 10px 0px;
+  padding: 30px 0px 30px 0px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.buttons {
+  margin-top: 30%;
+}
+
+.createUserButton {
+  margin: 30% 0px 10px 0px;
+  padding: 30px 0px 30px 0px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.createUserButton {
+  margin: 30% 0px 10px 0px;
+  padding: 30px 0px 30px 0px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.wrap-text {
+  overflow: visible;
+  text-overflow: unset;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.routing-card {
+  display: block;
+  background-color: black;
+  margin: 3% 10px !important;
+  -webkit-box-shadow: 2px 1px 2px 1px;
+}
+
+.routing-item {
+  margin: 1%;
+  display: block;
+  background-color: lightgrey;
+}
+
+.routing-img {
+  margin: 0% 2%;
+  width: 100px;
+  height: 100px;
+}
+
+.routing-label {
+  font-size: 18px;
+  font-weight: bold;
 }

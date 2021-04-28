@@ -1,6 +1,7 @@
-import { ToastController } from "@ionic/angular";
+import { Injectable } from "@angular/core";
+import { ToastController } from "ionic-angular";
 
-
+@Injectable()
 export class Toasts {
 
     toastController: ToastController;
@@ -15,7 +16,7 @@ export class Toasts {
         message: message,
         duration: 2000
       });
-      (await toast).present;
+      await toast.present()
     }
 
 }

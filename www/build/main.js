@@ -672,7 +672,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/home/home.html"*/'<ion-content class="homeContent" padding padding-left>\n    <section>\n        <img src="../../assets/icon/ic-home-logo.png" />\n\n        <h1 class="homeTitle">Lista de Contatos</h1>\n\n        <div class="buttons">\n            <button (click)="goToLoginPage()" class="homeButton" ion-button full>\n                Entrar\n            </button>\n\n            <button (click)="goToRegisterPage()" class="homeButton" ion-button full>\n                Registrar\n            </button>\n        </div>\n    </section>\n</ion-content>'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/home/home.html"*/'<ion-content class="homeContent" padding padding-left>\n    <section>\n        <img src="../../assets/icon/ic-home-logo.png" />\n\n        <h1 class="homeTitle">Lista de Contatos</h1>\n\n        <div class="buttons">\n            <button (click)="goToLoginPage()" class="homeButton" ion-button full>\n                Entrar\n            </button>\n        </div>\n    </section>\n</ion-content>'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);

@@ -1,3 +1,6 @@
+import { Injectable } from "@angular/core";
+
+@Injectable()
 export class Dictionary<T> {
 
     public _keys: Array<string> = new Array<string>();
