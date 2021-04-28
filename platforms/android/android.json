@@ -9,7 +9,7 @@
         "parents": {
           "/manifest/application": [
             {
-              "xml": "<application android:usesCleartextTraffic=\"true\" />",
+              "xml": "<application android:networkSecurityConfig=\"@xml/network_security_config\" />",
               "count": 2,
               "mode": "merge",
               "id": "config.xml",
@@ -23,7 +23,7 @@
               }
             },
             {
-              "xml": "<application android:networkSecurityConfig=\"@xml/network_security_config\" />",
+              "xml": "<application android:usesCleartextTraffic=\"true\" />",
               "count": 1,
               "mode": "merge",
               "id": "config.xml",
@@ -44,7 +44,7 @@
           "/*": [
             {
               "xml": "<feature name=\"ImagePicker\"><param name=\"android-package\" value=\"com.synconset.ImagePicker\" /></feature>",
-              "count": 7
+              "count": 4
             },
             {
               "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
@@ -145,35 +145,35 @@
   },
   "installed_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-advanced-http": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-crop": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-ionic-webview": {
       "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-telerik-imagepicker": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     }
   },
   "dependent_plugins": {},

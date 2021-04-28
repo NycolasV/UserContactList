@@ -44,11 +44,8 @@ buildscript {
         ext.kotlin_version = gradlePluginKotlinVersion
     }
 
-    repositories {
-        mavenCentral()
-        google()
-        jcenter()
-    }
+    apply from: 'repositories.gradle'
+    repositories repos
 
     dependencies {
         apply from: '../CordovaLib/cordova.gradle'
@@ -82,10 +79,8 @@ buildscript {
 
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
+    apply from: 'repositories.gradle'
+    repositories repos
 }
 
 task wrapper(type: Wrapper) {
@@ -147,8 +142,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-telerik-imagepicker/cincoprestadores-ignorelinterrors.gradle"
-apply from: "../cordova-plugin-telerik-imagepicker/cincoprestadores-androidtarget.gradle"
+apply from: "../cordova-plugin-telerik-imagepicker/list-ignorelinterrors.gradle"
+apply from: "../cordova-plugin-telerik-imagepicker/list-androidtarget.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

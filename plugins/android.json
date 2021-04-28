@@ -8,35 +8,35 @@
   },
   "installed_plugins": {
     "cordova-plugin-advanced-http": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-crop": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-ionic-webview": {
       "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-telerik-imagepicker": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.cincoprestadores"
+      "PACKAGE_NAME": "com.contact.list"
     }
   },
   "dependent_plugins": {}

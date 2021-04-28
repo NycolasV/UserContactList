@@ -25696,228 +25696,18 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
-page-chat .notification-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-page-chat .chat-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  background-color: #f8f8f8;
-}
-
-page-chat .container-title {
-  text-align: center;
-  width: 75%;
-}
-
-page-chat .notification-title {
-  font-weight: bold;
-  color: black;
-  font-size: 18px;
-  margin-top: 10px;
-  width: 120%;
-}
-
-page-chat .moremenu-icon {
-  margin-right: -5px;
-  max-width: 45px;
-  background-color: transparent;
-  padding: 10px;
-}
-
-page-chat ion-icon {
-  margin-left: -5px;
-  margin-top: 10px;
-}
-
-page-chat .chat-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-page-chat .back-color {
+.createUserButton {
+  margin: 30% 0px 10px 0px;
+  padding: 30px 0px 30px 0px;
   color: white;
-  --color:white;
-  font-size: 14pt;
-}
-
-page-chat .back-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-page-chat .back-button {
-  background-color: transparent;
-  padding-left: 20px;
-}
-
-page-chat .back-button img {
-  padding-left: 0px;
-  width: 50px;
-}
-
-page-chat .chat-title {
-  padding-left: 20px;
-  font-size: 14px;
-  color: white;
-  font-weight: bold;
-}
-
-page-chat ion-item {
-  --ion-background-color: transparent !important;
-}
-
-page-chat .item, page-chat .list, page-chat .item-content, page-chat .item-complex {
-  --ion-background-color: transparent !important;
-}
-
-page-chat .main {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-}
-
-page-chat .input-area {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
-  height: 69px;
-  background: #172035;
-  padding: 10px;
-}
-
-page-chat .input-area form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
-page-chat .input-area form ion-input {
-  width: 82%;
-  border: none;
-  padding: 5px 10px;
-  color: #8a898b;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: 'Titillium Web', sans-serif;
-  background: inherit;
-}
-
-page-chat .input-area form ion-input:focus {
-  outline: none;
-}
-
-page-chat .input-area form button {
-  width: 18%;
-  border: none;
-  color: #8a898b;
-  opacity: 0.9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  background: inherit;
-}
-
-page-chat .input-area form button ion-icon {
-  font-size: 3rem;
-}
-
-page-chat * {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-page-chat-list .wrap-text {
-  overflow: visible;
-  text-overflow: unset;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  word-break: break-word;
-}
-
-page-chat-list .routing-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 6% 10px !important;
-}
-
-page-chat-list .routing-item {
-  margin: 1% 2%;
-}
-
-page-chat-list .routing-img {
-  margin: 5% 2%;
-  width: 25%;
-}
-
-page-chat-list .routing-span {
-  font-size: 14px;
-  font-weight: normal;
-}
-
-page-chat-list .routing-label {
   font-size: 18px;
-  font-weight: bold;
+  border-radius: 15px;
 }
 
 page-home .homeTitle {
-  color: white;
-  margin: 0px 15px !important;
+  color: black;
   text-align: center;
+  font-weight: bold;
 }
 
 page-home img {
@@ -25927,23 +25717,14 @@ page-home img {
 }
 
 page-home .homeContent {
-  background-color: #172035;
+  background-color: white;
 }
 
-page-home .enterButton {
-  margin: 50px 0px 10px 0px;
+page-home .homeButton {
+  margin: 10px 0px 10px 0px;
   padding: 30px 0px 30px 0px;
   color: white;
   font-size: 18px;
-  border-radius: 15px;
-}
-
-page-home .registerButton {
-  margin: 10px 0px;
-  padding: 30px 0px 30px 0px;
-  color: #071532 !important;
-  font-size: 18px;
-  background-color: white;
   border-radius: 15px;
 }
 
@@ -25951,414 +25732,32 @@ page-home .buttons {
   margin-top: 30%;
 }
 
-.register-content {
-  background-color: #E2E3E5;
-}
-
-h1,
-h4 {
-  text-align: center;
-  color: #172035;
-}
-
-.register-input {
-  border: 1.5px solid gray;
-  margin: 20px auto;
-  font-size: 18px;
-  background-color: white;
-  padding-left: 10px;
-}
-
-.register-checkbox {
-  background-color: transparent;
-}
-
-.detail-message {
-  font-size: 12px;
-  color: gray;
-}
-
-.error-message {
-  font-size: 12px;
-  color: red;
-}
-
-ion-item {
-  background-color: transparent !important;
-  padding: 0 !important;
-  --highlight-color-focused: none;
-}
-
-.list-ios:not(.list-inset):not(.list-ios-lines-none) .item:last-child {
-  --inner-border-width: 0;
-  --border-width: 0 0 0.55px 0;
-}
-
-ion-select {
-  width: 100% !important;
-  border: 1.5px solid gray;
-  font-size: 18px;
-  background-color: white;
-  border-radius: 7px;
-}
-
-ion-input {
-  border-radius: 7px;
-}
-
-.label-ios + ion-input .text-input,
-.label-ios + ion-textarea .text-input,
-.label-ios + .input + .cloned-input {
-  margin-left: 0px;
-}
-
-.register-input {
-  margin: 10px auto !important;
-}
-
-.item-input-has-focus .input-cover, .input-has-focus .input-cover {
-  --inner-border-width: 0px !important;
-  --border-width: 0px !important;
-  --highlight-color-focused: none;
-}
-
-.item-inner {
-  border-bottom-color: transparent !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-page-notification-details .notification-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-page-notification-details .back-button {
-  background-color: transparent;
-  padding-left: 20px;
-}
-
-page-notification-details .back-button img {
-  padding-left: 0px;
-  width: 25px;
-}
-
-page-notification-details .container-title {
-  text-align: center;
-  width: 75%;
-}
-
-page-notification-details .notification-title {
-  font-weight: bold;
-  color: black;
-  font-size: 22px;
-  margin-top: 10px;
-}
-
-.wrap-text {
-  overflow: visible;
-  text-overflow: unset;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  word-break: break-word;
-}
-
-.routing-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 3% 10px !important;
-  -webkit-box-shadow: 2px 1px 2px 1px;
-}
-
-.routing-item {
-  margin: 1% 2%;
-  display: block;
-}
-
-.routing-img {
-  margin: 0% 2%;
-  width: 100px;
-  height: 100px;
-}
-
-.routing-span {
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.routing-label {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-page-profile .profile-picture {
-  margin: 10px auto;
-  border-radius: 50%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  width: 150px;
-  height: 150px;
-}
-
-page-profile .profile-label {
-  color: white;
-  font-weight: bold;
-  margin: 0px;
-  padding-bottom: 5px;
-}
-
-page-profile .profile-input {
-  color: white;
-  margin: 0px;
-  font-size: 16px;
-  padding-bottom: 5px;
-}
-
-page-profile .profile-editinput {
-  color: white;
-  margin: 0px;
-  font-size: 16px;
-  padding-bottom: 5px;
-}
-
-page-profile .homeTitle {
-  color: white;
-  margin: 0px 15px !important;
-  text-align: center;
-}
-
-page-profile img {
-  width: 50%;
-  display: block;
-  margin: 40px auto 40px auto;
-}
-
-page-profile .homeContent {
-  background-color: #172035;
-}
-
-page-profile .enterButton {
-  margin: 50px 0px 10px 0px;
+.homeButton {
+  margin: 10px 0px 10px 0px;
   padding: 30px 0px 30px 0px;
   color: white;
   font-size: 18px;
   border-radius: 15px;
 }
 
-page-profile .registerButton {
-  margin: 10px 0px;
-  padding: 30px 0px 30px 0px;
-  color: #071532 !important;
-  font-size: 18px;
-  background-color: white;
-  border-radius: 15px;
-}
-
-page-profile .buttons {
+.buttons {
   margin-top: 30%;
 }
 
-.homeContent {
-  background-color: #172035;
-}
-
-.titleConfirmRegister1 {
-  text-align: center;
-  font-size: 24px;
-  margin: 50px 20px 2px 20px !important;
-  color: white;
-}
-
-.titleConfirmRegister2 {
-  text-align: center;
-  font-size: 24px;
-  margin: 2px 20px 30px 20px !important;
-  color: white;
-}
-
-.confirmText1 {
-  color: white;
-  font-size: 18px;
-  vertical-align: super;
-  text-align: center !important;
-  -webkit-appearance: sliderthumb-horizontal;
-  margin: 10px 15px 0px 15px;
-}
-
-.confirmText2 {
-  color: white;
-  font-size: 18px;
-  vertical-align: super;
-  text-align: center !important;
-  -webkit-appearance: sliderthumb-horizontal;
-  margin: 0px 15px 30px 15px;
-}
-
-.backButton {
-  margin: 10px 0px;
+.createUserButton {
+  margin: 30% 0px 10px 0px;
   padding: 30px 0px 30px 0px;
-  color: #071532 !important;
+  color: white;
   font-size: 18px;
-  background-color: white;
+  border-radius: 15px;
 }
 
-.register-content {
-  background-color: #E2E3E5;
-}
-
-h1,
-h4 {
-  text-align: center;
-  color: #172035;
-}
-
-.register-input {
-  border: 1.5px solid gray;
-  margin: 20px auto;
+.createUserButton {
+  margin: 30% 0px 10px 0px;
+  padding: 30px 0px 30px 0px;
+  color: white;
   font-size: 18px;
-  background-color: white;
-  padding-left: 10px;
-}
-
-.register-checkbox {
-  background-color: transparent;
-}
-
-.detail-message {
-  font-size: 12px;
-  color: gray;
-}
-
-.error-message {
-  font-size: 12px;
-  color: red;
-}
-
-ion-item {
-  background-color: transparent !important;
-  --highlight-color-focused: none;
-  padding: 0 !important;
-}
-
-ion-select {
-  width: 100% !important;
-  border: 1.5px solid gray;
-  font-size: 18px;
-  background-color: white;
-  border-radius: 7px;
-}
-
-ion-input {
-  border-radius: 7px;
-}
-
-.label-ios + ion-input .text-input,
-.label-ios + ion-textarea .text-input,
-.label-ios + .input + .cloned-input {
-  margin-left: 0px;
-}
-
-.register-content {
-  background-color: #E2E3E5;
-}
-
-h1,
-h4 {
-  text-align: center;
-  color: #172035;
-}
-
-.register-input {
-  border: 1.5px solid gray;
-  margin: 20px auto;
-  font-size: 18px;
-  background-color: white;
-}
-
-.register-checkbox {
-  background-color: transparent;
-}
-
-.detail-message {
-  font-size: 12px;
-  color: gray;
-}
-
-.error-message {
-  font-size: 12px;
-  color: red;
-}
-
-ion-item {
-  background-color: transparent !important;
-  --highlight-color-focused: none;
-  padding: 0 !important;
-}
-
-ion-select {
-  width: 100% !important;
-  border: 1.5px solid gray;
-  font-size: 18px;
-  background-color: white;
-  margin: 0px 0px 25px 0px;
-}
-
-.alert-radio-label {
-  font-size: 17px !important;
-  white-space: inherit !important;
-}
-
-.categoryList {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.obs-box {
-  border: 1.5px solid gray;
-  margin: 20px auto;
-  font-size: 18px;
-  background-color: white;
-  padding-left: 10px;
-  border-radius: 10px;
-  height: 120px;
-}
-
-.platform-mobile textarea.text-input {
-  height: 103px;
-}
-
-ion-label {
-  text-align: start !important;
-  font-size: 18px;
-  vertical-align: super;
-}
-
-.review-box {
-  border: 2px solid gray;
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.error-message {
-  font-size: 15px;
-  color: red;
-  text-align: center !important;
+  border-radius: 15px;
 }
 
 .wrap-text {
@@ -26370,39 +25769,23 @@ ion-label {
   word-break: break-word;
 }
 
-#cart-badge {
-  background-color: red;
-  border-radius: 20px;
-  padding: 5px;
-}
-
 .routing-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: block;
+  background-color: black;
   margin: 3% 10px !important;
   -webkit-box-shadow: 2px 1px 2px 1px;
 }
 
 .routing-item {
-  margin: 1% 2%;
+  margin: 1%;
   display: block;
+  background-color: lightgrey;
 }
 
 .routing-img {
   margin: 0% 2%;
   width: 100px;
   height: 100px;
-}
-
-.routing-span {
-  font-size: 14px;
-  font-weight: normal;
 }
 
 .routing-label {

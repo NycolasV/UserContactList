@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cincoprestadores" version="1.3.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.contact.list" version="1.3.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="ImagePicker">
         <param name="android-package" value="com.synconset.ImagePicker" />
     </feature>
@@ -38,9 +38,9 @@
     <feature name="IonicWebView">
         <param name="android-package" value="com.ionicframework.cordova.webview.IonicWebView" />
     </feature>
-    <name>5Co Prestador</name>
-    <description>Cadastro de fornecedores para a 5Co Digital</description>
-    <author email="contato@5codigital.com" href="https://5codigital.com/">5Co Digital</author>
+    <name>Contact List</name>
+    <description>Lista de contatos</description>
+    <author email="nycolasvieira@hotmail.com" href="">Nycolas Vieira</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
