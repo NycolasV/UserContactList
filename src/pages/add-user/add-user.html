@@ -1,0 +1,45 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Novo Contato</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: white;" padding>
+	<ion-item>
+		<ion-input placeholder="Nome do contato"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="E-mail"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="Telefone"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="CEP"></ion-input>
+	</ion-item>
+
+	<div style="display: flex; justify-content: space-between;">
+		<ion-item>
+			<ion-input placeholder="Número"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-input placeholder="Complemento"></ion-input>
+		</ion-item>
+	</div>
+
+	<div style="margin: 5px 15px; font-size: 18px;">
+		<ion-label text-wrap>Rua</ion-label>
+
+		<ion-label text-wrap>Bairro</ion-label>
+
+		<ion-label text-wrap>Cidade - UF</ion-label>
+	</div>
+
+	<button (click)="createUser()" class="createUserButton" ion-button full>
+		Criar contato
+	</button>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Login</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: white;" padding>
+	<ion-item>
+		<ion-input placeholder="E-mail"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-input placeholder="Senha" type="password"></ion-input>
+	</ion-item>
+
+	<div class="buttons">
+		<button (click)="goToLoginPage()" class="homeButton" ion-button full>
+			Entrar
+		</button>
+
+		<button (click)="goToRegisterPage()" class="homeButton" ion-button full>
+			Registrar
+		</button>
+	</div>
+</ion-content>
