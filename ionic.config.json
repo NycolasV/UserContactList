@@ -1,7 +1,7 @@
 {
-  "name": "UserContactList",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+    "name": "AppPrestadores",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "ionic-angular"
 }
