@@ -9,13 +9,13 @@ import { Crop } from '@ionic-native/crop/ngx';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { UserProvider } from '../providers/user.provider';
-import { UserListPageModule } from '../pages/user-list/user-list.module';
+import { ContactListPageModule } from '../pages/contact-list/contact-list.module';
 import { UserModel } from '../models/user-model';
 import { CepModel } from '../models/cep-model';
 import { Toasts } from '../utils/toasts';
 import { Dictionary } from '../utils/dictionary';
-import { AddUserPageModule } from '../pages/add-user/add-user.module';
-import { SeeUserPageModule } from '../pages/see-user/see-user.module';
+import { AddContactPageModule } from '../pages/add-contact/add-contact.module';
+import { SeeContactPageModule } from '../pages/see-contact/see-contact.module';
 import { RegisterUserPageModule } from '../pages/register-user/register-user.module';
 import { LoginPageModule } from '../pages/login/login.module';
 
@@ -28,9 +28,9 @@ import { LoginPageModule } from '../pages/login/login.module';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    UserListPageModule,
-    AddUserPageModule,
-    SeeUserPageModule,
+    ContactListPageModule,
+    AddContactPageModule,
+    SeeContactPageModule,
     RegisterUserPageModule,
     LoginPageModule
   ],

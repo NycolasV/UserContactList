@@ -21,19 +21,19 @@ webpackEmptyAsyncContext.id = 114;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/add-user/add-user.module": [
+	"../pages/add-contact/add-contact.module": [
 		157
 	],
-	"../pages/login/login.module": [
+	"../pages/contact-list/contact-list.module": [
 		159
 	],
-	"../pages/register-user/register-user.module": [
-		166
+	"../pages/login/login.module": [
+		164
 	],
-	"../pages/see-user/see-user.module": [
+	"../pages/register-user/register-user.module": [
 		167
 	],
-	"../pages/user-list/user-list.module": [
+	"../pages/see-contact/see-contact.module": [
 		168
 	]
 };
@@ -58,10 +58,10 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddUserPageModule", function() { return AddUserPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddContactPageModule", function() { return AddContactPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_user__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_contact__ = __webpack_require__(78);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -71,23 +71,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AddUserPageModule = /** @class */ (function () {
-    function AddUserPageModule() {
+var AddContactPageModule = /** @class */ (function () {
+    function AddContactPageModule() {
     }
-    AddUserPageModule = __decorate([
+    AddContactPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__add_user__["a" /* AddUserPage */],
+                __WEBPACK_IMPORTED_MODULE_2__add_contact__["a" /* AddContactPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__add_user__["a" /* AddUserPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__add_contact__["a" /* AddContactPage */]),
             ],
         })
-    ], AddUserPageModule);
-    return AddUserPageModule;
+    ], AddContactPageModule);
+    return AddContactPageModule;
 }());
 
-//# sourceMappingURL=add-user.module.js.map
+//# sourceMappingURL=add-contact.module.js.map
 
 /***/ }),
 
@@ -96,10 +96,10 @@ var AddUserPageModule = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactListPageModule", function() { return ContactListPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_list__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -109,23 +109,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginPageModule = /** @class */ (function () {
-    function LoginPageModule() {
+var ContactListPageModule = /** @class */ (function () {
+    function ContactListPageModule() {
     }
-    LoginPageModule = __decorate([
+    ContactListPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_2__contact_list__["a" /* ContactListPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact_list__["a" /* ContactListPage */]),
             ],
         })
-    ], LoginPageModule);
-    return LoginPageModule;
+    ], ContactListPageModule);
+    return ContactListPageModule;
 }());
 
-//# sourceMappingURL=login.module.js.map
+//# sourceMappingURL=contact-list.module.js.map
 
 /***/ }),
 
@@ -133,94 +133,9 @@ var LoginPageModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_list_user_list__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_user_register_user__ = __webpack_require__(165);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-var LoginPage = /** @class */ (function () {
-    function LoginPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    LoginPage.prototype.goToLoginPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__user_list_user_list__["a" /* UserListPage */]);
-    };
-    LoginPage.prototype.goToRegisterPage = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_user_register_user__["a" /* RegisterUserPage */]);
-                return [2 /*return*/];
-            });
-        });
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Login</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-item>\n		<ion-input placeholder="E-mail"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Senha" type="password"></ion-input>\n	</ion-item>\n\n	<div class="buttons">\n		<button (click)="goToLoginPage()" class="homeButton" ion-button full>\n			Entrar\n		</button>\n\n		<button (click)="goToRegisterPage()" class="homeButton" ion-button full>\n			Registrar\n		</button>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
-
-/***/ 161:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cep_model__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cep_model__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -257,7 +172,7 @@ var UserModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 162:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -283,16 +198,16 @@ var CepModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 163:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SeeUserPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SeeContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_toasts__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_user_add_user__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_toasts__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_contact_add_contact__ = __webpack_require__(78);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -342,8 +257,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-var SeeUserPage = /** @class */ (function () {
-    function SeeUserPage(navCtrl, navParams, loadingController, provider, toastCtrl, toasts) {
+var SeeContactPage = /** @class */ (function () {
+    function SeeContactPage(navCtrl, navParams, loadingController, provider, toastCtrl, toasts) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.loadingController = loadingController;
@@ -353,16 +268,16 @@ var SeeUserPage = /** @class */ (function () {
         this.toasts = new __WEBPACK_IMPORTED_MODULE_3__utils_toasts__["a" /* Toasts */](this.toastCtrl);
         this.instanceScreen();
     }
-    SeeUserPage.prototype.instanceScreen = function () {
+    SeeContactPage.prototype.instanceScreen = function () {
         this.loading = this.loadingController.create({
             content: 'Carregando...'
         });
         this.loading.dismiss();
     };
-    SeeUserPage.prototype.editUser = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__add_user_add_user__["a" /* AddUserPage */]);
+    SeeContactPage.prototype.editUser = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__add_contact_add_contact__["a" /* AddContactPage */]);
     };
-    SeeUserPage.prototype.deleteUser = function () {
+    SeeContactPage.prototype.deleteUser = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -374,9 +289,9 @@ var SeeUserPage = /** @class */ (function () {
             });
         });
     };
-    SeeUserPage = __decorate([
+    SeeContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-see-user',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/see-user/see-user.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Nome do Contato</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<div style="margin: 5px 15px; font-size: 18px;">\n		<ion-label text-wrap>Nome do contato</ion-label>\n\n		<ion-label text-wrap>E-mail</ion-label>\n\n		<ion-label text-wrap>Telefone</ion-label>\n\n		<ion-label text-wrap>CEP</ion-label>\n\n		<div style="display: flex; justify-content: space-between;">\n			<ion-label text-wrap>Número</ion-label>\n\n			<ion-label text-wrap>Complemento</ion-label>\n		</div>\n\n		<ion-label text-wrap>Rua</ion-label>\n\n		<ion-label text-wrap>Bairro</ion-label>\n\n		<ion-label text-wrap>Cidade - UF</ion-label>\n	</div>\n\n	<!-- <ion-fab right bottom>\n		<button ion-fab style="font-size: 30px;" (click)="editUser()">\n			<ion-icon name="open"></ion-icon>\n		</button>\n	</ion-fab> -->\n\n	<ion-fab right bottom>\n		<button ion-fab>\n			<ion-icon name="arrow-dropleft"></ion-icon>\n		</button>\n\n		<ion-fab-list side="left">\n			<button ion-fab color="danger" (click)="deleteUser()">\n			  <ion-icon name="trash"></ion-icon>\n			</button>\n\n		  	<button ion-fab color="secondary" (click)="editUser()">\n			  <ion-icon name="open"></ion-icon>\n			</button>\n		</ion-fab-list>\n	</ion-fab>	\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/see-user/see-user.html"*/,
+            selector: 'page-see-contact',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/see-contact/see-contact.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Nome do Contato</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<div style="margin: 5px 15px; font-size: 18px;">\n		<ion-label text-wrap>Nome do contato</ion-label>\n\n		<ion-label text-wrap>E-mail</ion-label>\n\n		<ion-label text-wrap>Telefone</ion-label>\n\n		<ion-label text-wrap>CEP</ion-label>\n\n		<div style="display: flex; justify-content: space-between;">\n			<ion-label text-wrap>Número</ion-label>\n\n			<ion-label text-wrap>Complemento</ion-label>\n		</div>\n\n		<ion-label text-wrap>Rua</ion-label>\n\n		<ion-label text-wrap>Bairro</ion-label>\n\n		<ion-label text-wrap>Cidade - UF</ion-label>\n	</div>\n\n	<!-- <ion-fab right bottom>\n		<button ion-fab style="font-size: 30px;" (click)="editUser()">\n			<ion-icon name="open"></ion-icon>\n		</button>\n	</ion-fab> -->\n\n	<ion-fab right bottom>\n		<button ion-fab>\n			<ion-icon name="arrow-dropleft"></ion-icon>\n		</button>\n\n		<ion-fab-list side="left">\n			<button ion-fab color="danger" (click)="deleteUser()">\n			  <ion-icon name="trash"></ion-icon>\n			</button>\n\n		  	<button ion-fab color="secondary" (click)="editUser()">\n			  <ion-icon name="open"></ion-icon>\n			</button>\n		</ion-fab-list>\n	</ion-fab>	\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/see-contact/see-contact.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -384,15 +299,15 @@ var SeeUserPage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__["a" /* UserProvider */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_3__utils_toasts__["a" /* Toasts */]])
-    ], SeeUserPage);
-    return SeeUserPage;
+    ], SeeContactPage);
+    return SeeContactPage;
 }());
 
-//# sourceMappingURL=see-user.js.map
+//# sourceMappingURL=see-contact.js.map
 
 /***/ }),
 
-/***/ 164:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -478,14 +393,137 @@ var Toasts = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(165);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginPageModule = /** @class */ (function () {
+    function LoginPageModule() {
+    }
+    LoginPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
+            ],
+        })
+    ], LoginPageModule);
+    return LoginPageModule;
+}());
+
+//# sourceMappingURL=login.module.js.map
+
+/***/ }),
+
 /***/ 165:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_user_register_user__ = __webpack_require__(166);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+var LoginPage = /** @class */ (function () {
+    function LoginPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    LoginPage.prototype.goToLoginPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__["a" /* ContactListPage */]);
+    };
+    LoginPage.prototype.goToRegisterPage = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_user_register_user__["a" /* RegisterUserPage */]);
+                return [2 /*return*/];
+            });
+        });
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Login</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content padding light>\n	<ion-item>\n		<ion-input placeholder="E-mail"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Senha" type="password"></ion-input>\n	</ion-item>\n\n	<div class="buttons">\n		<button (click)="goToLoginPage()" class="homeButton" ion-button full>\n			Entrar\n		</button>\n\n		<button (click)="goToRegisterPage()" class="homeButton" ion-button full>\n			Registrar\n		</button>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterUserPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_list_user_list__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -512,7 +550,7 @@ var RegisterUserPage = /** @class */ (function () {
         this.loading.dismiss();
     };
     RegisterUserPage.prototype.createUser = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__user_list_user_list__["a" /* UserListPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__["a" /* ContactListPage */]);
     };
     RegisterUserPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -529,7 +567,7 @@ var RegisterUserPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -537,7 +575,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterUserPageModule", function() { return RegisterUserPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_user__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_user__ = __webpack_require__(166);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -567,53 +605,15 @@ var RegisterUserPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 167:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SeeUserPageModule", function() { return SeeUserPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__see_user__ = __webpack_require__(163);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var SeeUserPageModule = /** @class */ (function () {
-    function SeeUserPageModule() {
-    }
-    SeeUserPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__see_user__["a" /* SeeUserPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__see_user__["a" /* SeeUserPage */]),
-            ],
-        })
-    ], SeeUserPageModule);
-    return SeeUserPageModule;
-}());
-
-//# sourceMappingURL=see-user.module.js.map
-
-/***/ }),
-
 /***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserListPageModule", function() { return UserListPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SeeContactPageModule", function() { return SeeContactPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_list__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__see_contact__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -623,23 +623,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UserListPageModule = /** @class */ (function () {
-    function UserListPageModule() {
+var SeeContactPageModule = /** @class */ (function () {
+    function SeeContactPageModule() {
     }
-    UserListPageModule = __decorate([
+    SeeContactPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__user_list__["a" /* UserListPage */],
+                __WEBPACK_IMPORTED_MODULE_2__see_contact__["a" /* SeeContactPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_list__["a" /* UserListPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__see_contact__["a" /* SeeContactPage */]),
             ],
         })
-    ], UserListPageModule);
-    return UserListPageModule;
+    ], SeeContactPageModule);
+    return SeeContactPageModule;
 }());
 
-//# sourceMappingURL=user-list.module.js.map
+//# sourceMappingURL=see-contact.module.js.map
 
 /***/ }),
 
@@ -650,7 +650,7 @@ var UserListPageModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(165);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -712,15 +712,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_user_provider__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_user_list_user_list_module__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_user_model__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_cep_model__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__utils_toasts__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_contact_list_contact_list_module__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_user_model__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_cep_model__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__utils_toasts__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__utils_dictionary__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_add_user_add_user_module__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_see_user_see_user_module__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_register_user_register_user_module__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_login_login_module__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_add_contact_add_contact_module__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_see_contact_see_contact_module__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_register_user_register_user_module__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_login_login_module__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -760,16 +760,16 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/add-user/add-user.module#AddUserPageModule', name: 'AddUserPage', segment: 'add-user', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/add-contact/add-contact.module#AddContactPageModule', name: 'AddContactPage', segment: 'add-contact', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/contact-list/contact-list.module#ContactListPageModule', name: 'ContactListPage', segment: 'contact-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register-user/register-user.module#RegisterUserPageModule', name: 'RegisterUserPage', segment: 'register-user', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/see-user/see-user.module#SeeUserPageModule', name: 'SeeUserPage', segment: 'see-user', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user-list/user-list.module#UserListPageModule', name: 'UserListPage', segment: 'user-list', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/see-contact/see-contact.module#SeeContactPageModule', name: 'SeeContactPage', segment: 'see-contact', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_10__pages_user_list_user_list_module__["UserListPageModule"],
-                __WEBPACK_IMPORTED_MODULE_15__pages_add_user_add_user_module__["AddUserPageModule"],
-                __WEBPACK_IMPORTED_MODULE_16__pages_see_user_see_user_module__["SeeUserPageModule"],
+                __WEBPACK_IMPORTED_MODULE_10__pages_contact_list_contact_list_module__["ContactListPageModule"],
+                __WEBPACK_IMPORTED_MODULE_15__pages_add_contact_add_contact_module__["AddContactPageModule"],
+                __WEBPACK_IMPORTED_MODULE_16__pages_see_contact_see_contact_module__["SeeContactPageModule"],
                 __WEBPACK_IMPORTED_MODULE_17__pages_register_user_register_user_module__["RegisterUserPageModule"],
                 __WEBPACK_IMPORTED_MODULE_18__pages_login_login_module__["LoginPageModule"]
             ],
@@ -937,7 +937,11 @@ var UserProvider = /** @class */ (function () {
         this.http = http;
     }
     UserProvider.prototype.getCep = function (cep) {
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__utils_urls__["a" /* Urls */].cep + cep + "/json/");
+        var header = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["c" /* HttpHeaders */]();
+        header.append("Access-Control-Allow-Origin", '*');
+        header.append("Access-Control-Allow-Methods", 'POST, GET, OPTIONS, DELETE');
+        header.append('Content-Type', 'application/json');
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__utils_urls__["a" /* Urls */].cep + cep + "/json/", { headers: header });
     };
     UserProvider.prototype.saveUser = function (user) {
         localStorage.setItem(user.id.toString(), JSON.stringify(user));
@@ -962,9 +966,10 @@ var UserProvider = /** @class */ (function () {
     };
     UserProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], UserProvider);
     return UserProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=user.provider.js.map
@@ -975,7 +980,7 @@ var UserProvider = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddUserPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__ = __webpack_require__(46);
@@ -988,39 +993,90 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 
 
 
-var AddUserPage = /** @class */ (function () {
-    function AddUserPage(navCtrl, navParams, loadingController, provider) {
+var AddContactPage = /** @class */ (function () {
+    function AddContactPage(navCtrl, navParams, loadingController, provider) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.loadingController = loadingController;
         this.provider = provider;
         this.instanceScreen();
     }
-    AddUserPage.prototype.instanceScreen = function () {
+    AddContactPage.prototype.instanceScreen = function () {
         this.loading = this.loadingController.create({
             content: 'Carregando...'
         });
         this.loading.dismiss();
     };
-    AddUserPage.prototype.createUser = function () {
+    AddContactPage.prototype.createUser = function () {
         this.navCtrl.pop();
     };
-    AddUserPage = __decorate([
+    AddContactPage.prototype.getAddress = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var address;
+            return __generator(this, function (_a) {
+                if (!this.cep || this.cep.length < 7) {
+                    return [2 /*return*/];
+                }
+                this.provider.getCep(this.cep)
+                    .subscribe(function (response) {
+                    address = response;
+                });
+                console.log(address);
+                return [2 /*return*/];
+            });
+        });
+    };
+    AddContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add-user',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/add-user/add-user.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Novo Contato</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-item>\n		<ion-input placeholder="Nome do contato"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="E-mail"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Telefone"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="CEP"></ion-input>\n	</ion-item>\n\n	<div style="display: flex; justify-content: space-between;">\n		<ion-item>\n			<ion-input placeholder="Número"></ion-input>\n		</ion-item>\n\n		<ion-item>\n			<ion-input placeholder="Complemento"></ion-input>\n		</ion-item>\n	</div>\n\n	<div style="margin: 5px 15px; font-size: 18px;">\n		<ion-label text-wrap>Rua</ion-label>\n\n		<ion-label text-wrap>Bairro</ion-label>\n\n		<ion-label text-wrap>Cidade - UF</ion-label>\n	</div>\n\n	<button (click)="createUser()" class="createUserButton" ion-button full>\n		Criar contato\n	</button>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/add-user/add-user.html"*/,
+            selector: 'page-add-contact',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/add-contact/add-contact.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Novo Contato</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-item>\n		<ion-input placeholder="Nome do contato"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="E-mail"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Telefone" (type)="tel" (maxLenght)="11"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input [(ngModel)]="cep" placeholder="CEP" (maxLenght)="8" (type)="tel" (keypress)="getAddress()"></ion-input>\n	</ion-item>\n\n	<div style="display: flex; justify-content: space-between;">\n		<ion-item>\n			<ion-input placeholder="Número"></ion-input>\n		</ion-item>\n\n		<ion-item>\n			<ion-input placeholder="Complemento"></ion-input>\n		</ion-item>\n	</div>\n\n	<div style="margin: 5px 15px; font-size: 18px;">\n		<ion-label text-wrap>Rua</ion-label>\n\n		<ion-label text-wrap>Bairro</ion-label>\n\n		<ion-label text-wrap>Cidade - UF</ion-label>\n	</div>\n\n	<button (click)="createUser()" class="createUserButton" ion-button full>\n		Criar contato\n	</button>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/add-contact/add-contact.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__["a" /* UserProvider */]])
-    ], AddUserPage);
-    return AddUserPage;
+    ], AddContactPage);
+    return AddContactPage;
 }());
 
-//# sourceMappingURL=add-user.js.map
+//# sourceMappingURL=add-contact.js.map
 
 /***/ }),
 
@@ -1028,13 +1084,13 @@ var AddUserPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserListPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user_model__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user_model__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_user_add_user__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__see_user_see_user__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_contact_add_contact__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__see_contact_see_contact__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1085,15 +1141,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-var UserListPage = /** @class */ (function () {
-    function UserListPage(navCtrl, navParams, loadingController, provider) {
+var ContactListPage = /** @class */ (function () {
+    function ContactListPage(navCtrl, navParams, loadingController, provider) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.loadingController = loadingController;
         this.provider = provider;
         this.instanceScreen();
     }
-    UserListPage.prototype.instanceScreen = function () {
+    ContactListPage.prototype.instanceScreen = function () {
         this.loading = this.loadingController.create({
             content: 'Carregando...'
         });
@@ -1102,30 +1158,30 @@ var UserListPage = /** @class */ (function () {
         this.users = [user, user, user, user, user, user, user, user, user, user];
         this.loading.dismiss();
     };
-    UserListPage.prototype.openDetails = function (user) {
+    ContactListPage.prototype.openDetails = function (user) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__see_user_see_user__["a" /* SeeUserPage */], { user: user });
+                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__see_contact_see_contact__["a" /* SeeContactPage */], { user: user });
                 return [2 /*return*/];
             });
         });
     };
-    UserListPage.prototype.addUser = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__add_user_add_user__["a" /* AddUserPage */]);
+    ContactListPage.prototype.addUser = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__add_contact_add_contact__["a" /* AddContactPage */]);
     };
-    UserListPage = __decorate([
+    ContactListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lists',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/user-list/user-list.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Lista de contatos</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-list>\n		<div *ngFor="let user of users">\n			<ion-card class="routing-card" (click)="openDetails(user)">				\n				<ion-item class="routing-item">\n					<ion-label class="wrap-text routing-label">\n						Nome: {{user.name}}\n						<br/>\n						<ion-label class="wrap-text routing-label">\n							Telefone: {{user.phone}}\n						</ion-label>\n					</ion-label> \n				</ion-item>\n			</ion-card>\n		</div>\n	</ion-list>\n\n	<ion-fab right bottom>\n		<button ion-fab style="font-size: 30px;" (click)="addUser()">\n			+\n		</button>\n	</ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/user-list/user-list.html"*/,
+            selector: 'page-lists',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/contact-list/contact-list.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Lista de contatos</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-list>\n		<div *ngFor="let user of users">\n			<ion-card class="routing-card" (click)="openDetails(user)">				\n				<ion-item class="routing-item">\n					<ion-label class="wrap-text routing-label">\n						Nome: {{user.name}}\n						<br/>\n						<ion-label class="wrap-text routing-label">\n							Telefone: {{user.phone}}\n						</ion-label>\n					</ion-label> \n				</ion-item>\n			</ion-card>\n		</div>\n	</ion-list>\n\n	<ion-fab right bottom>\n		<button ion-fab style="font-size: 30px;" (click)="addUser()">\n			+\n		</button>\n	</ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/contact-list/contact-list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__["a" /* UserProvider */]])
-    ], UserListPage);
-    return UserListPage;
+    ], ContactListPage);
+    return ContactListPage;
 }());
 
-//# sourceMappingURL=user-list.js.map
+//# sourceMappingURL=contact-list.js.map
 
 /***/ })
 

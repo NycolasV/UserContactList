@@ -13,8 +13,13 @@ export class UserProvider {
   }
 
   getCep(cep: string): Observable<CepModel> {
+   
+    var header = new HttpHeaders();
+    header.append("Access-Control-Allow-Origin", '*');
+    header.append("Access-Control-Allow-Methods", 'POST, GET, OPTIONS, DELETE');
+    header.append('Content-Type', 'application/json' );
     
-    return this.http.get<CepModel>(Urls.cep + cep + "/json/");
+    return this.http.get<CepModel>(Urls.cep + cep + "/json/", {headers: header});
   }
   
   saveUser(user: UserModel) {

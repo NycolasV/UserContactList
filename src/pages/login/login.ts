@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, Loading, NavController} from 'ionic-angular';
-import { UserListPage } from '../user-list/user-list';
+import { ContactListPage } from '../contact-list/contact-list';
 import { RegisterUserPage } from '../register-user/register-user';
 
 @IonicPage()
@@ -17,7 +17,7 @@ export class LoginPage {
 
   goToLoginPage() {
    
-    this.navCtrl.push(UserListPage);
+    this.navCtrl.push(ContactListPage);
   }
 
   async goToRegisterPage() {
