@@ -22,7 +22,26 @@ export class UserProvider {
     return this.http.get<CepModel>(Urls.cep + cep + "/json/", {headers: header});
   }
   
+  loginUser(username: string, password: string) {
+
+    var users = this.getUsers();
+
+    var i: number;
+    for(i = 0; i < users.length; i++) {
+      if (users[i].email == username && users[i].password == password) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
   saveUser(user: UserModel) {
+
+    localStorage.setItem("user-" + user.id.toString(), JSON.stringify(user));
+  }
+
+  saveContact(user: UserModel) {
 
     localStorage.setItem(user.id.toString(), JSON.stringify(user));
   }
@@ -37,7 +56,33 @@ export class UserProvider {
 
     var users: Array<UserModel> = new Array<UserModel>();
     for (let i = 1; i <= lastId; i++) {
-        users.push(JSON.parse(localStorage.getItem(i.toString())));
+        var user = localStorage.getItem("user-" + i.toString());
+
+        if (user) {
+          users.push(JSON.parse(user));
+        }
+    }
+
+    return users;
+  }
+
+  getContacts(): UserModel[] {
+    
+    var lastId = 0;
+    var lastIdStr = localStorage.getItem("lastId");
+    if (lastIdStr) {
+        lastId = +lastIdStr;
+    }
+
+    var users: Array<UserModel> = new Array<UserModel>();
+    for (let i = 1; i <= lastId; i++) {
+      for (let i = 1; i <= lastId; i++) {
+        var user = localStorage.getItem(i.toString());
+
+        if (user) {
+          users.push(JSON.parse(user));
+        }
+    }
     }
 
     return users;
@@ -45,10 +90,20 @@ export class UserProvider {
 
   getUser(id: number):Observable<UserModel> {
     
+    return JSON.parse(localStorage.getItem("user-" + id.toString()));
+  }
+
+  getContact(id: number):Observable<UserModel> {
+    
     return JSON.parse(localStorage.getItem(id.toString()));
   }
 
   deleteUser(id: number) {
+
+    localStorage.removeItem("user-" + id.toString());
+  }
+
+  deleteContacts(id: number) {
 
     localStorage.removeItem(id.toString());
   }

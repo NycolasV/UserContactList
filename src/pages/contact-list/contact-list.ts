@@ -31,7 +31,7 @@ export class ContactListPage {
 
     // this.users = this.provider.getUsers();
 
-    var user = new UserModel("Nycolas Vieira", "teste@teste.com", "(11) 989371260", null);
+    var user = new UserModel("Nycolas Vieira", "teste@teste.com", "(11) 989371260", null, null);
     this.users = [user, user, user, user, user, user, user, user, user, user]
 
     this.loading.dismiss();

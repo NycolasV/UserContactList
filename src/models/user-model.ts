@@ -4,7 +4,7 @@ import { CepModel } from "./cep-model";
 @Injectable()
 export class UserModel {
 
-    constructor (name: string, email: string, phone: string, cep: CepModel) {
+    constructor (name: string, email: string, phone: string, cep: CepModel, password: string) {
         var lastId = 0;
 
         var idStr = localStorage.getItem("lastId");
@@ -12,13 +12,14 @@ export class UserModel {
             lastId = +idStr
         }
         
-        this.id = lastId++;
+        this.id = ++lastId;
         localStorage.setItem("lastId", this.id.toString())
 
         this.name = name;
         this.email = email;
-        this.phone = phone;
+        this.phone = phone;        
         this.cep = cep;
+        this.password = password;
     }
 
     id: number;
@@ -26,5 +27,6 @@ export class UserModel {
     email: string;
     phone: string;
     cep: CepModel;
+    password: string;
 
 }

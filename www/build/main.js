@@ -148,24 +148,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var UserModel = /** @class */ (function () {
-    function UserModel(name, email, phone, cep) {
+    function UserModel(name, email, phone, cep, password) {
         var lastId = 0;
         var idStr = localStorage.getItem("lastId");
         if (idStr) {
             lastId = +idStr;
         }
-        this.id = lastId++;
+        this.id = ++lastId;
         localStorage.setItem("lastId", this.id.toString());
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.cep = cep;
+        this.password = password;
     }
     UserModel = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [String, String, String, __WEBPACK_IMPORTED_MODULE_1__cep_model__["a" /* CepModel */]])
+        __metadata("design:paramtypes", [String, String, String, typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__cep_model__["a" /* CepModel */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__cep_model__["a" /* CepModel */]) === "function" && _a || Object, String])
     ], UserModel);
     return UserModel;
+    var _a;
 }());
 
 //# sourceMappingURL=user-model.js.map
@@ -438,8 +440,9 @@ var LoginPageModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_user_register_user__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_list_contact_list__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_user_register_user__ = __webpack_require__(166);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -488,28 +491,54 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
+
 var LoginPage = /** @class */ (function () {
-    function LoginPage(navCtrl) {
+    function LoginPage(navCtrl, provider) {
         this.navCtrl = navCtrl;
+        this.provider = provider;
     }
     LoginPage.prototype.goToLoginPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__["a" /* ContactListPage */]);
+        return __awaiter(this, void 0, void 0, function () {
+            var canWatch;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!this.username || !this.password) {
+                            console.log('Parametros vazios');
+                            return [2 /*return*/];
+                        }
+                        return [4 /*yield*/, this.provider.loginUser(this.username, this.password)];
+                    case 1:
+                        canWatch = _a.sent();
+                        if (canWatch) {
+                            console.log('aqui');
+                            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__contact_list_contact_list__["a" /* ContactListPage */]);
+                        }
+                        else {
+                            console.log('Login incorreto');
+                            return [2 /*return*/];
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
     LoginPage.prototype.goToRegisterPage = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_user_register_user__["a" /* RegisterUserPage */]);
+                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__register_user_register_user__["a" /* RegisterUserPage */]);
                 return [2 /*return*/];
             });
         });
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Login</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content padding light>\n	<ion-item>\n		<ion-input placeholder="E-mail"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Senha" type="password"></ion-input>\n	</ion-item>\n\n	<div class="buttons">\n		<button (click)="goToLoginPage()" class="homeButton" ion-button full>\n			Entrar\n		</button>\n\n		<button (click)="goToRegisterPage()" class="homeButton" ion-button full>\n			Registrar\n		</button>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Login</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content padding light>\n	<ion-item>\n		<ion-input placeholder="E-mail" [(ngModel)]="username"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Senha" type="password" [(ngModel)]="password"></ion-input>\n	</ion-item>\n\n	<div class="buttons">\n		<button (click)="goToLoginPage()" class="homeButton" ion-button full>\n			Entrar\n		</button>\n\n		<button (click)="goToRegisterPage()" class="homeButton" ion-button full>\n			Registrar\n		</button>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/login/login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__["a" /* UserProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_user_provider__["a" /* UserProvider */]) === "function" && _b || Object])
     ], LoginPage);
     return LoginPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -523,7 +552,9 @@ var LoginPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterUserPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user_model__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_list_contact_list__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -536,10 +567,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var RegisterUserPage = /** @class */ (function () {
-    function RegisterUserPage(navCtrl, navParams, loadingController) {
+    function RegisterUserPage(navCtrl, navParams, provider, loadingController) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.provider = provider;
         this.loadingController = loadingController;
         this.instanceScreen();
     }
@@ -550,17 +584,21 @@ var RegisterUserPage = /** @class */ (function () {
         this.loading.dismiss();
     };
     RegisterUserPage.prototype.createUser = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__contact_list_contact_list__["a" /* ContactListPage */]);
+        if (this.password != this.confirmPassword) {
+            console.log('Senhas não coincidem');
+            return;
+        }
+        this.provider.saveUser(new __WEBPACK_IMPORTED_MODULE_2__models_user_model__["a" /* UserModel */](this.name, this.email, this.phone, null, this.password));
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__contact_list_contact_list__["a" /* ContactListPage */]);
     };
     RegisterUserPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register-user',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/register-user/register-user.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Criar Usuário</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-item>\n		<ion-input placeholder="Seu nome"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="E-mail"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Telefone"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Senha" type="password"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Confirmar senha" type="password"></ion-input>\n	</ion-item>\n\n	<button (click)="createUser()" class="createUserButton" ion-button full>\n		Criar conta\n	</button>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/register-user/register-user.html"*/,
+            selector: 'page-register-user',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/register-user/register-user.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Criar Usuário</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-item>\n		<ion-input placeholder="Seu nome" [(ngModel)]="name"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="E-mail" [(ngModel)]="email"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Telefone" [(ngModel)]="phone"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Senha" type="password" [(ngModel)]="password"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-input placeholder="Confirmar senha" type="password" [(ngModel)]="confirmPassword"></ion-input>\n	</ion-item>\n\n	<button (click)="createUser()" class="createUserButton" ion-button full>\n		Criar conta\n	</button>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/register-user/register-user.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__["a" /* UserProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__["a" /* UserProvider */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]) === "function" && _d || Object])
     ], RegisterUserPage);
     return RegisterUserPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=register-user.js.map
@@ -943,7 +981,20 @@ var UserProvider = /** @class */ (function () {
         header.append('Content-Type', 'application/json');
         return this.http.get(__WEBPACK_IMPORTED_MODULE_2__utils_urls__["a" /* Urls */].cep + cep + "/json/", { headers: header });
     };
+    UserProvider.prototype.loginUser = function (username, password) {
+        var users = this.getUsers();
+        var i;
+        for (i = 0; i < users.length; i++) {
+            if (users[i].email == username && users[i].password == password) {
+                return true;
+            }
+        }
+        return false;
+    };
     UserProvider.prototype.saveUser = function (user) {
+        localStorage.setItem("user-" + user.id.toString(), JSON.stringify(user));
+    };
+    UserProvider.prototype.saveContact = function (user) {
         localStorage.setItem(user.id.toString(), JSON.stringify(user));
     };
     UserProvider.prototype.getUsers = function () {
@@ -954,14 +1005,40 @@ var UserProvider = /** @class */ (function () {
         }
         var users = new Array();
         for (var i = 1; i <= lastId; i++) {
-            users.push(JSON.parse(localStorage.getItem(i.toString())));
+            var user = localStorage.getItem("user-" + i.toString());
+            if (user) {
+                users.push(JSON.parse(user));
+            }
+        }
+        return users;
+    };
+    UserProvider.prototype.getContacts = function () {
+        var lastId = 0;
+        var lastIdStr = localStorage.getItem("lastId");
+        if (lastIdStr) {
+            lastId = +lastIdStr;
+        }
+        var users = new Array();
+        for (var i = 1; i <= lastId; i++) {
+            for (var i_1 = 1; i_1 <= lastId; i_1++) {
+                var user = localStorage.getItem(i_1.toString());
+                if (user) {
+                    users.push(JSON.parse(user));
+                }
+            }
         }
         return users;
     };
     UserProvider.prototype.getUser = function (id) {
+        return JSON.parse(localStorage.getItem("user-" + id.toString()));
+    };
+    UserProvider.prototype.getContact = function (id) {
         return JSON.parse(localStorage.getItem(id.toString()));
     };
     UserProvider.prototype.deleteUser = function (id) {
+        localStorage.removeItem("user-" + id.toString());
+    };
+    UserProvider.prototype.deleteContacts = function (id) {
         localStorage.removeItem(id.toString());
     };
     UserProvider = __decorate([
@@ -1154,7 +1231,7 @@ var ContactListPage = /** @class */ (function () {
             content: 'Carregando...'
         });
         // this.users = this.provider.getUsers();
-        var user = new __WEBPACK_IMPORTED_MODULE_2__models_user_model__["a" /* UserModel */]("Nycolas Vieira", "teste@teste.com", "(11) 989371260", null);
+        var user = new __WEBPACK_IMPORTED_MODULE_2__models_user_model__["a" /* UserModel */]("Nycolas Vieira", "teste@teste.com", "(11) 989371260", null, null);
         this.users = [user, user, user, user, user, user, user, user, user, user];
         this.loading.dismiss();
     };
@@ -1173,12 +1250,10 @@ var ContactListPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-lists',template:/*ion-inline-start:"/home/nycolas/source/repos/UserContactList/src/pages/contact-list/contact-list.html"*/'<ion-header>\n	<ion-navbar>\n		<ion-title>Lista de contatos</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: white;" padding>\n	<ion-list>\n		<div *ngFor="let user of users">\n			<ion-card class="routing-card" (click)="openDetails(user)">				\n				<ion-item class="routing-item">\n					<ion-label class="wrap-text routing-label">\n						Nome: {{user.name}}\n						<br/>\n						<ion-label class="wrap-text routing-label">\n							Telefone: {{user.phone}}\n						</ion-label>\n					</ion-label> \n				</ion-item>\n			</ion-card>\n		</div>\n	</ion-list>\n\n	<ion-fab right bottom>\n		<button ion-fab style="font-size: 30px;" (click)="addUser()">\n			+\n		</button>\n	</ion-fab>\n</ion-content>\n'/*ion-inline-end:"/home/nycolas/source/repos/UserContactList/src/pages/contact-list/contact-list.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__["a" /* UserProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__["a" /* UserProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_user_provider__["a" /* UserProvider */]) === "function" && _d || Object])
     ], ContactListPage);
     return ContactListPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=contact-list.js.map
